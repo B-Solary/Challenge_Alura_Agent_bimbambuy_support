@@ -1,0 +1,14 @@
+langchain
+langchain-community
+langchain-experimental
+langchain-openai
+langchain-cohere
+langchain-google-genai
+faiss-cpu
+pypdf
+pandas
+tabulate
+sentence-transformers
+python-dotenv
+streamlit
+requests

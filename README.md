@@ -1,0 +1,2 @@
+# Challenge_Alura_Agent_BimBam-Buy
+Sistema de asistencia basado en inteligencia artificial que emplea Generación Aumentada por Recuperación (RAG) para la documentación de atención al cliente de una plataforma e-commerce llamada BimBam Buy.#
