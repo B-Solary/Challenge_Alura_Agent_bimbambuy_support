@@ -64,7 +64,7 @@ def _build_pdf_agent(dir_path, llm, force_rebuild):
         vectorstore = FAISS.from_documents(chunks, embeddings)
         vectorstore.save_local(INDEX_PATH)
 
-    retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 6})
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,
         retriever=retriever,
