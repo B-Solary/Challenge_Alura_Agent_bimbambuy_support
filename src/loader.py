@@ -8,7 +8,7 @@ una empresa real con múltiples manuales y políticas.
 
 import os
 from langchain_community.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 
 def load_pdfs_from_dir(dir_path: str):
