@@ -42,7 +42,7 @@ def get_llm():
         # Sirve tanto para Gemini como para modelos Gemma expuestos vía API de Google
         from langchain_google_genai import ChatGoogleGenerativeAI
         return ChatGoogleGenerativeAI(
-            model=os.getenv("GOOGLE_MODEL", "gemini-1.5-flash"),
+            model=os.getenv("GOOGLE_MODEL", "gemini-flash-latest"),
             temperature=0,
             google_api_key=os.getenv("GOOGLE_API_KEY"),
         )
