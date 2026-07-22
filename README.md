@@ -93,19 +93,21 @@ streamlit run app.py     # abre http://localhost:8501
 
 ## ☁️ Despliegue
 
-- **URL pública (Railway):** https://tu-proyecto.up.railway.app
+- - **URL pública (Streamlit Community Cloud):** https://challengealuraagentbimbambuysupport-8v8stjskbarsfsuw8mpn7w.streamlit.app
 - **Captura de pantalla del agente funcionando:**
 
-  _(agrega aquí tu imagen, por ejemplo `![deploy](deploy/screenshot.png)`)_
+  ![deploy](deploy/screenshot.png)
 
 - **Servicio de OCI usado:** Oracle Autonomous Database + APEX/ORDS, para
   registrar cada pregunta/respuesta en la tabla `agent_logs`.
 - **Captura de la tabla `agent_logs` con datos reales:**
 
-  _(agrega aquí tu imagen, por ejemplo `![logs](deploy/logs.png)`)_
+El agente incluye un módulo (`src/logger.py`) preparado para registrar cada
+pregunta/respuesta en un servicio externo (por ejemplo, Oracle APEX/ORDS),
+mediante la variable `OCI_LOG_ENDPOINT`. Queda como mejora futura opcional;
+si no se configura, el agente funciona con normalidad.
 
 Instrucciones completas del deploy en [`deploy/DEPLOY.md`](deploy/DEPLOY.md).
-
 ## 🧩 ¿Y si quiero usar un CSV en vez de (o además de) los PDF?
 
 El código ya soporta ambos casos: si en `.env` apuntas `DATA_PATH` a un
