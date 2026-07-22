@@ -48,7 +48,7 @@ def _build_csv_agent(file_path, llm):
 
 
 def _build_pdf_agent(dir_path, llm, force_rebuild):
-    from langchain.chains import RetrievalQA
+    from langchain_classic.chains import RetrievalQA
     from langchain_community.vectorstores import FAISS
     from src.loader import load_pdfs_from_dir, split_documents
 
